@@ -1,0 +1,15 @@
+#version: '3.4' 
+
+services:
+  dotnet-watch-docker-example:
+    build: .
+    container_name: dotnet_watch_docker_example
+    #image: mcr.microsoft.com/dotnet/sdk:5.0
+    ports:
+      - 5001:5001
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - ASPNETCORE_URLS = https://+:5001
+    command: dotnet watch run
