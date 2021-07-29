@@ -13,7 +13,7 @@ namespace docker_debug_webapi.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing af", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing rain", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
